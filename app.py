@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello_world():
     today = todays_date()
-    return render_template("index.html", the_date = today)
+    return render_template("resume.html", the_date = today)
     
 @app.route("/about")
 def about_me():
